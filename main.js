@@ -1,0 +1,19 @@
+async function check(){
+    let pyodide = await loadPyodide();
+    let a = document.getElementById("cin").value;
+    let pythonCode = `
+def run_and_capture():
+    import io
+    import sys
+    import contextlib
+    old_stdout = sys.stdout
+    sys.stdout = buffer = io.StringIO()
+    with contextlib.redirect_stdout(buffer):
+        ${a}
+    sys.stdout = old_stdout
+    return buffer.getvalue()
+run_and_capture()
+`;
+    let r = await pyodide.runPythonAsync(pythonCode);
+    document.getElementById("cout").innerText = r;
+}

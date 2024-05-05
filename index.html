@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/darcula.min.css"> !-->
     <link rel="stylesheet" href="fonthandler.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js"></script>
 </head>
 <body>
 
@@ -22,7 +23,18 @@
         hljs.highlightAll();
     </script>
     <h1>The Basics</h1>
-    <p></p>
-    <pre><code id="code" contenteditable="true" class="language-python">print("hello, world!")</code></pre>
+    <p>The hallmark of every coder's journey to start coding: Hello, world! If you can print hello world, you can do anything! (eventually). Basically, this course, along with teaching you some fundementals of python, will also teach you how to use our website!</p>
+    <h2>Pyodide</h2>
+    <p>On our website, hosted on github pages, we don't have server side processing, or the ability to store data. To remedy this, we allow you to connect your own JSON data provider, the default is PANTRY. You can choose to use our pantry or connect your own. Connecting your own means that you can control the data inside of it, ensuring that it never reaches max capacity (You can also use this to skip a lesson. Just increment LESSON by 1!). Or you can just have it store session by session. Once you leave, you never get your progress back. Thank you to the beautiful world of free to use open source!</p>
+    <h3>Now let's begin.</h3>
+    <p>Starting off simple. The "print" command prints text to screen. It's like asking a printer to print a page, but your screen is that page, and python is the ctrl+p! Nifty, right!</p>
+    <p>Python expects all arguments given to a function, or command, which in this case is print to be structured like this function(**args, **kwargs), with sometimes set types and sometimes unset types. This is pretty complicated for a beginner so for now let's ignore this and focus back on the basics. What this means is that print, the function, can take as many **args or "arguments" as needed. an "argument" is a special perameter passed to print, which supplies data to the function. Hello world is the data, and print is the instruction. Let's see it in action:
+    </p>
+    <pre><code id="code" contenteditable="false" class="language-python">print("hello, world!")</code></pre>
+    <p>Now, you type it!</p>
+    <input id="cin" type="text"> print("hello, world!")
+    <p> instead of actually checking what you typed for the code, let's verify the result of the code! (note: all strings are santitized). Press submit to execute your wonderful new creation!</p>
+    <button onclick="check()">Submit</button><br>
+    <textarea id="cout" readonly></textarea>
 </body>
 </html>
