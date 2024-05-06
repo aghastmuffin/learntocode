@@ -1,4 +1,5 @@
 async function check(){
+    document.getElementById("load").innerText = "Loading...";
     let pyodide = await loadPyodide();
     let a = document.getElementById("cin").value;
     let pythonCode = `
@@ -16,4 +17,5 @@ run_and_capture()
 `;
     let r = await pyodide.runPythonAsync(pythonCode);
     document.getElementById("cout").innerText = r;
+    document.getElementById("load").innerText = "";
 }

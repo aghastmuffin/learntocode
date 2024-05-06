@@ -32,9 +32,14 @@
     </p>
     <pre><code id="code" contenteditable="false" class="language-python">print("hello, world!")</code></pre>
     <p>Now, you type it!</p>
-    <input id="cin" type="text"> print("hello, world!")
+    <input id="cin" type="text">print("hello, world!") </textarea>
     <p> instead of actually checking what you typed for the code, let's verify the result of the code! (note: all strings are santitized). Press submit to execute your wonderful new creation!</p>
-    <button onclick="check()">Submit</button><br>
+    <button onclick="check()" class="btn">Submit</button><p id="load"></p><br> <br>
     <textarea id="cout" readonly></textarea>
+
+    <br>
+    <p>For now, i'll trust you did it. Also if you're slightly more advanced at python you might've noticed that this is an actuall interpreter. Pretty sick, right. We accomplish this mostly with help from pyodide.</p>
+    <button onclick="next()" class="finbtn">Complete Lesson</button>
+    <br> <br>
 </body>
 </html>
