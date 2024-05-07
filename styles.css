@@ -36,3 +36,8 @@ body{
 body textarea, body input, body code{
   font-family: 'JetBrains Mono', monospace;
 }
+.rinfo{
+  position: absolute;
+  right: 0px;
+  top: 5px;
+}
