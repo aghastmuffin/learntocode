@@ -41,3 +41,33 @@ body textarea, body input, body code{
   right: 0px;
   top: 5px;
 }
+.dwnnotif{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  animation: slideUp 1s ease-out;
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.c-btn{
+  font-family: 'Poppins', sans-serif;
+  background-color: #f45c5c;
+  box-shadow: 0 5px 0 #d12e2e;
+  border-radius: 5px;
+  border: 0px;
+}
+.c-btn:active{
+  box-shadow: none;
+  transform: translateY(5px);
+}

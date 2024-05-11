@@ -24,3 +24,14 @@ run_and_capture()
     document.getElementById("cout").innerText = r;
     document.getElementById("load").innerText = "";
 }
+window.onload = function() {
+    var sourceElement = document.getElementById('dwnnotif');
+    var targetElement = document.getElementById('spacer-1');
+  
+    var sourceHeight = window.getComputedStyle(sourceElement, null).getPropertyValue('height');
+    targetElement.style.height = sourceHeight;
+  }
+function closeNotif(){
+    document.getElementById("dwnnotif").remove();
+    document.getElementById("spacer-1").style.display = "none";
+}
