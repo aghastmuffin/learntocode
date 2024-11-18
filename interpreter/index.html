@@ -14,5 +14,8 @@
     <p>Output:</p>
     <textarea id="output" style="width: 500px;height: 600;" disabled>No Result to Display.</textarea>
     <button onclick="executeCode()">execute code</button>
+    <p>install micropip packages. use a pypi url or package name seperated by a comma (note this instane does NOT have access to the internet)</p>
+    <textarea id="packages"></textarea>
+    <button onclick="let a = document.getElementById('packages').value; let packarray = split(a); install(packarray)">install packages</button>
 </body>
 </html>
