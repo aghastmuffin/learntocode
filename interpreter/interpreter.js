@@ -40,7 +40,7 @@ async function install(packages) {
 async function executeCode() {
     if (!pyodide) {
         document.getElementById('output').value = "Please wait for Pyodide to load...";
-        return;
+        initPyodide();
     }
 
     const input = document.getElementById('input').value;
