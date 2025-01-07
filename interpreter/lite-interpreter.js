@@ -1,3 +1,4 @@
+/*A lighter weight interpreter- no micropip!*/
 let pyodide;
 async function initPyodide() {
             pyodide = await loadPyodide();

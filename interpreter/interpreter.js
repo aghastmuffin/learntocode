@@ -1,6 +1,6 @@
 let pyodide;
 let micropip;
-
+/*Micropip init, The best wasm python experience that can be provided! */
 async function initPyodide() {
     try {
         pyodide = await loadPyodide();
