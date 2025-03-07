@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Python</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-dark.min.css">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-light.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/darcula.min.css"> !-->
+    <link rel="stylesheet" href="https://aghastmuffin.github.io/learntocode/fonthandler.css">
+    <link rel="stylesheet" href="https://aghastmuffin.github.io/learntocode/styles.css">
+    <link rel="icon" href="https://aghastmuffin.github.io/learntocode/favicon.png">
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js"></script>
+</head>
+<body>
+
+    <script defer src="https://aghastmuffin.github.io/learntocode/main.js"></script>
+    <script defer src="https://aghastmuffin.github.io/learntocode/hightchk.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+    <!-- load python -->
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/python.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <h1>Let's Try out the full fledged interpreter!</h1>
+    <p class="rinfo" id="version_disp">running V3</p>
+    <p>Now that you know some of the basics, I'm going to finish teaching you how to accually USE our website.</p>
+    <h2>Interpreter</h2>
+    <p>We have 2 interpreters avaliable to you: the integrated interpreter, provided with every lesson, and the standalone interpreter, which you can use for free, whenever, even if you're not directly in a lesson. Now recall that our project uses pyodide, so it can't directly access a network, so some packages might not work as expected. If a lesson uses these packages we use a custom interpreter, that you can ONLY access from within the lesson. (due to us needing to spawn it in for you, as it runs on a server, not locally)</p>
+    <h3>Creating a Variable</h3>
+    <p>In Python, creating a variable is as easy as naming it and giving it a value. Here's how you do it  (you can change box to whatever, it is just a placeholder, as well as the value it holds, this is just an example):</p>
+    <pre><code id="code" contenteditable="false" class="language-python">box = 10</code></pre>
+    <p>Now, if you've ever coded before in a statically typed language, this might be confusing. Why don't I have to specify what type of variable box is? (int, str, float) Python is a dynamically typed language, and therefore the variable assignment is given at runtime, line by line.</p>
+    <p>this part of what makes python special. But this still doesn't mean Python is a magician, it can't determine what you want from thin air. that's where datatypes come in.</p>
+    <h3>string</h3>
+    <p>a string in python, or a str, is a piece of text inside that box. It can hold any data. It is shown with either a single quote ' to start and a ' to end, or a double quote so: </p>
+   <pre><code id="code" contenteditable="false" class="language-python">box = "I am 1 box, I hold data!"
+   #or
+   box = 'I am 1 box, I hold data!'</code></pre>
+    <p>Now if you notice, the variable holds numbers, letters, AND symbols! That's sick!</p>
+    <h3>Integer</h3>
+    <p>an integer is a type of variable that can only hold... guess... Integers. Now if you're a math nerd you know that an integer is a number, but not just any number, it has to be a whole number</p>
+    <pre><code id="code" contenteditable="false" class="language-python">box = 10</code></pre>
+    <p>integer variables can only hold integers. Trying to give them a string will break them. They also do not use quotes.</p>
+    <h3> Booleen </h3>
+    <p> a Booleen is like a light switch, it can be on or off. It is useful for evaluating a statement's validity, and holding that answer. It uses True, or False (case sensitive) an example of a booleen is: </p>
+     <pre><code id="code" contenteditable="false" class="language-python">box = True 
+         box = False</code></pre>
+    <p>There are many more uses for variables in python, and while I wont tell all of them in this lesson here are a few that you will learn. print(variable) will print the contents of the variable. if variable == True/False/Any_data: will check if the variable equals some data, and execute any code inside the if statement if true, or skip if false.</p>
+    <p> that's it for now! I hope you enjoyed. Variables are a key part of a program, becuase they can be changed multiple times! and used to store data that can be used later.</p>
+    <!--<button onclick="next()" class="finbtn">Complete Lesson</button> !-->
+    <button onclick="window.location.href='showmore.html';" class="finbtn">Complete Lesson</button>
+    <div id="spacer-1" class="spacer-1"></div>
+    <div id="dwnnotif" class="dwnnotif"><p>Like our product? It's all for free! But if you wanna contribute check it out <a href="/cont.html">here</a>!</p>
+    <button onclick="window.location.href='/cont.html'" class="btn">Contribute</button>
+    <button onclick="window.location.href='https://www.buymeacoffee.com/aghastmuffin'" class="btn">Buy me a coffee!</button>
+    <button onclick='closeNotif()' class="c-btn">X</button>
+    </p></div>
+</body>
+</html>
